@@ -1,0 +1,49 @@
+{% extends "layout.htmx" %}
+
+{% block title %} home {% endblock title %}
+
+{% block body %}
+  <div>
+    this is home page
+    <br />
+    anme : {{name }}
+    <br />
+    id : {{id}}
+    <br />
+    rolleno : {{rollno}}
+    <br />
+    desi : {{designation}}
+    <br />
+    salary : {{salary}}
+    <br />
+    <hr />
+    {{project}}
+    <br />
+    {{project.2}}
+    <br />
+    <hr />
+    {{address}}
+    <br />
+    {{ address.city }}
+    <br />
+    {{address.code | default:"Not specified"}}
+    <br />
+    <hr />
+    <h3>loops </h3>
+    <ul>
+      {% for skill in skills %}
+      <li>{{skill}}</li>
+      {% endfor %}
+    </ul>
+    <hr />
+    <h3>conditions and loops</h3>
+    <ul>
+        {% for hobby in hobbies %} 
+            {% if hobby.rank|divisibleby:2  %}
+                <li>{{hobby.work}}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+  </div>
+{% endblock body %}
+

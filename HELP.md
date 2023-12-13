@@ -18,7 +18,7 @@
 --- run the run through cli
 
 # run the server 
-pipenv run dev
+`pipenv run dev`
 
 # creating the static and templates directories in root of project
 `mkdir static && mkdir templates`
@@ -53,6 +53,17 @@ at the same time add urlpatterns in urls.py which is at home directory.
 # define the methods in home/view.py {home,about,...} and give the apporater path in home/urls.py
 this is simple called as request dispatcher (we can think it as controllers)
 
+
+# to access admin panel to make use of db
+`python manage.py makemigrations`
+`python manage.py migrate`
+
+
+# create superuser
+roles:
+    webUsers
+    admin
+`python manage.py createsuperuser`
 
 
 

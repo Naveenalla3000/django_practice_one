@@ -1,0 +1,10 @@
+{% extends "layout.htmx" %}
+
+{% block title %} about {% endblock title %}
+
+{% block body %}
+  <div>
+    this is about page
+  </div>
+{% endblock body %}
+

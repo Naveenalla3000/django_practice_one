@@ -1,0 +1,10 @@
+{% extends "layout.htmx" %}
+
+{% block title %} services {% endblock title %}
+
+{% block body %}
+  <div>
+    this is services page
+  </div>
+{% endblock body %}
+

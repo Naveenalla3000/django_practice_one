@@ -17,6 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+# customize admin panel details
+admin.site.site_header = "Axal Admin"
+admin.site.site_title = "Alax Admin Portal"
+admin.site.index_title = "Welcome to Alax web Portal"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls')),
