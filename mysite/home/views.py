@@ -64,15 +64,16 @@ def contact(req):
             phone = req.POST.get('phone')
             role = req.POST.get('role')
             if not name or not email or not phone or not role:
-               pass
+               raise Exception("All fields are required")
             newEmployee = Employee(emp_name = name,
                                 emp_email = email,
                                 emp_phno = phone,
                                 emp_role = role)
         # print(newEmployee.emp_email,newEmployee.emp_name,newEmployee.emp_phno,newEmployee.emp_role,newEmployee.emp_id)
             newEmployee.save()
-        except Exception as e:
-            print(e)
+            messages.success(req,"Employee added successfully")
+        except Exception as exc:
+            print(exc)
         finally:
             return render(req,"contact.htmx")
 

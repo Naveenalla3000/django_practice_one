@@ -79,9 +79,7 @@ roles:
 # Give METHOD ACTION to html form at home/contact.htmx
 
 # add csrf(Cross-site request forgery) token at the form 
-``
-
-
+`{% csrf_token %}`
 
 
 

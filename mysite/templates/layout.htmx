@@ -16,6 +16,7 @@
     }
   </style>
   <body>
+
     <nav style="background-color: #000">
       <ul
         style="
@@ -39,6 +40,17 @@
         </li>
       </ul>
     </nav>
+
+    {% if messages %}
+    {% for message in messages %}
+    <div style="background-color: rgba(71, 229, 161, 0.697); color: white; padding: 10px;" class="message">
+      <div style="padding: 10px;">
+        <p style="text-align: right; margin-right: 20px; font-size: 20px;">{{message}}</p>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+
     {% block body %}{% endblock body %}
 
     <footer
