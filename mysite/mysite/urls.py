@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path,include
 
 # customize admin panel details
-admin.site.site_header = "Axal Admin"
+admin.site.site_header = "Alax Admin"
 admin.site.site_title = "Alax Admin Portal"
 admin.site.index_title = "Welcome to Alax web Portal"
 

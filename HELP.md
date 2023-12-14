@@ -67,7 +67,19 @@ roles:
 
 
 
+# Creating Employee models at home/models.py
+# Register Employee at home/admin.py
+# Add home.apps.HomeConfig at setting.py
 
+# make the migrations about Employee(MODEL) class
+`python manage.py makemigrations`
+`python manage.py migrate`
+
+# add raw data through admin panel for testing
+# Give METHOD ACTION to html form at home/contact.htmx
+
+# add csrf(Cross-site request forgery) token at the form 
+``
 
 
 

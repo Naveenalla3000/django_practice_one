@@ -3,7 +3,7 @@
 {% block title %} home {% endblock title %}
 
 {% block body %}
-  <div>
+  <div style="padding:10px";>
     this is home page
     <br />
     anme : {{name }}
@@ -41,6 +41,8 @@
         {% for hobby in hobbies %} 
             {% if hobby.rank|divisibleby:2  %}
                 <li>{{hobby.work}}</li>
+            {% else %}
+                <li style="text-transform: uppercase;" >{{hobby.work}}</li>
             {% endif %}
         {% endfor %}
     </ul>
