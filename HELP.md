@@ -11,7 +11,7 @@
 
 # creating a project of django
 
-`django-admin start mysite`
+`django-admin startproject mysite`
 # add runserver command in Pipfile
 `[scripts]`
 `dev = python mysite/manage.py runserver 8080`
